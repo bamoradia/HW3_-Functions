@@ -25,5 +25,30 @@ const palindrome = (input) => {
 console.log(palindrome('Radar'));
 console.log(palindrome('borscht'));
 
+const sumDigits = (num) => {
+	const stringDigits = num.toString();
+	const arrDigits = stringDigits.split('');
+	let sumNum = 0;
+	for (let i = 0; i < arrDigits.length; i++) {
+		sumNum = sumNum + parseInt(arrDigits[i])
+	}
+	return sumNum;
+}
+
+console.log(sumDigits(1234));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
