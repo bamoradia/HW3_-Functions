@@ -55,7 +55,29 @@ const sumArray = (arrNum) => {
 
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
+const checkPrime = (number) => {
+	squareRoot = Math.sqrt(number);
+	for(let i = 2; i <= squareRoot; i++) {
+		if(Number.isInteger(number / i)) {
+			return false
+		}
+	}
+	return true
+}
 
+console.log(checkPrime(7));
+
+const printPrime = (limit) => {
+	let check = 0;
+	for (let i = 2; i <= limit; i++) {
+		check = checkPrime(i);
+		if(check === true) {
+			console.log(check, i);
+		}
+	}
+}
+
+printPrime(97);
 
 
 
