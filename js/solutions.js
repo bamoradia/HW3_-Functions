@@ -105,9 +105,47 @@ console.log(insertDash(875467799753754));
 
 
 
+//Chessboard
 
+const boardSize = 8;
+const space = ' ';
+const pound = '#';
 
+evenBoard = [];
+oddBoard = [];
 
+for(let i = 0; i < boardSize; i++) {
+	if(i % 2 === 0 ) {
+		evenBoard[i] = space;
+	} else {
+		evenBoard[i] = pound;
+	}
+} 
+
+for(let i = 0; i < boardSize; i++) {
+	if(i % 2 === 0 ) {
+		oddBoard[i] = pound;
+	} else {
+		oddBoard[i] = space;
+	}
+} 
+
+console.log(evenBoard);
+console.log(oddBoard);
+
+finalBoard = [];
+
+for(let j = 0; j < boardSize; j++) {
+	if(j % 2 === 0 ) {
+		finalBoard[j] = evenBoard;
+	} else {
+		finalBoard[j] = oddBoard;
+	}
+}
+
+for(i = 0; i < boardSize; i++) {
+	console.log(finalBoard[i].join());
+}
 
 
 
