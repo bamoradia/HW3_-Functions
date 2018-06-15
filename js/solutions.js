@@ -35,7 +35,15 @@ const sumDigits = (num) => {
 	return sumNum;
 }
 
-console.log(sumDigits(1234));
+console.log(sumDigits(12345));
+
+
+const calculateSide = (num1, num2) => {
+	total = Math.pow(num1, 2) + Math.pow(num2, 2);
+	return Math.sqrt(total);
+}
+
+console.log(calculateSide(8, 6));
 
 
 
