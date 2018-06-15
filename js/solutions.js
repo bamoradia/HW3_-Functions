@@ -45,7 +45,15 @@ const calculateSide = (num1, num2) => {
 
 console.log(calculateSide(8, 6));
 
+const sumArray = (arrNum) => {
+	let total = 0;
+	for(let i = 0; i < arrNum.length; i++) {
+		total = total + arrNum[i];
+	}
+	return total;
+}
 
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 
 
