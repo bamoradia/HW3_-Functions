@@ -80,6 +80,30 @@ const printPrime = (limit) => {
 printPrime(97);
 
 
+const insertDash = (num) => {
+	const stringDigits = num.toString();
+	const arrDigits = stringDigits.split('');
+	console.log(arrDigits.length)
+	let newArrDigits = [];
+	for(let i = 0; i < arrDigits.length; i++) {
+		newArrDigits[i] = parseInt(arrDigits[i]);	
+		console.log(newArrDigits);
+	}
+
+	for(let j = 0; j < newArrDigits.length; j++) {
+		console.log(newArrDigits[j-1], newArrDigits[j]);
+		if( ((newArrDigits[j - 1] % 2 ) === 1 ) && ((newArrDigits[j] % 2) === 1 )) {
+			newArrDigits.splice(j, 0, '-');
+		}
+	}
+
+	return newArrDigits.join('');
+
+}
+
+console.log(insertDash(875467799753754));
+
+
 
 
 
